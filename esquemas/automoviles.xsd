@@ -1,0 +1,20 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="automoviles">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="automovil" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="marca" type="xs:string"/>
+                            <xs:element name="modelo" type="xs:string"/>
+                            <xs:element name="anio" type="xs:integer"/>
+                            <xs:element name="color" type="xs:string"/>
+                            <xs:element name="precio" type="xs:decimal"/>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:long" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

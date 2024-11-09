@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<automoviles>
+    <automovil id="1">
+        <marca>Toyota</marca>
+        <modelo>Corolla</modelo>
+        <anio>2021</anio>
+        <color>Gris</color>
+        <precio>450000.00</precio>
+    </automovil>
+    <automovil id="2">
+        <marca>Nissan</marca>
+        <modelo>Sentra</modelo>
+        <anio>2022</anio>
+        <color>Azul</color>
+        <precio>420000.00</precio>
+    </automovil>
+    <automovil id="3">
+        <marca>Honda</marca>
+        <modelo>Civic</modelo>
+        <anio>2024</anio>
+        <color>Negro</color>
+        <precio>650000.00</precio>
+    </automovil>
+</automoviles>
