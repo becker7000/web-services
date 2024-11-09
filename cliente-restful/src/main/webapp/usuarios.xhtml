@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <title>Lista de usuarios</title>
+</h:head>
+<h:body style="text-align:center">
+
+    <p:panel id="myPanel" header="Lista aleatoria de usuarios">
+
+        <h:form>
+
+            <p:commandButton value="Mostrar usuarios aleatorios"
+                             action="#{usersController.obtenerUsuarios}"
+                             update="dtUsuarios" process="@this" />
+
+            <p:dataTable id="dtUsuarios"
+                         value="#{usersController.listaUsuarios}"
+                         var="usuario"
+                         style="width: 90%; margin: 40px auto;">
+
+                <p:column headerText="Foto" style="width: 15%; text-align:center;">
+                    <h:outputLink value="#{usuario.picture.large}" target="_blank">
+
+                        <h:graphicImage value="#{usuario.picture.large}"
+                                        alt="Foto de Usuario"
+                                        width="80"
+                                        height="80"/>
+
+                    </h:outputLink>
+                </p:column>
+
+                <p:column headerText="Nombre" style="width: 15%; text-align:center;">
+                    #{usuario.name.first}
+                </p:column>
+
+                <p:column headerText="Email" style="width: 30%; text-align:center;">
+                    <h:outputText value="#{usuario.email}" style="word-wrap: break-word; white-space: normal;"/>
+                </p:column>
+
+                <p:column headerText="Teléfono" style="width: 25%; text-align:center;">
+                    #{usuario.phone}
+                </p:column>
+
+                <p:column headerText="Género" style="width: 15%; text-align:center;">
+                    #{usuario.gender}
+                </p:column>
+
+            </p:dataTable>
+
+
+        </h:form>
+    </p:panel>
+
+</h:body>
+
+</html>
