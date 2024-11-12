@@ -1,0 +1,104 @@
+------------------------------------------------------------
+DÍA 1: (420 mins)
+
+1. Examen y presentación del curso. (15 mins)
+
+2. Introducción (15 mins)
+
+3. Intalación de: JDK 21, IntelliJ, Wildfly y MySQL (90 mins)
+
+*** BREAK (15 mins) ***
+
+3. Intalación de: JDK 21, IntelliJ, Wildfly y MySQL (30 mins)
+
+Ejercicios:
+
+4. esquemas (30 mins)
+
+5. webapp-jax-ws-example [soap-web-service] (75 mins)
+  (checar en runtime)
+
+*** COMIDA (60 mins) ***
+
+6. cliente-jax-ws [cliente-jax-ws] (60 mins)
+  (wsimport, mvn generate-sources)
+
+7. example-webapp-jaxb [jaxb-app] (30 mins)
+  (primero serializar y luego deserializar)
+  (SerializacionCirculoTest, DesearializacionCirculoTest)
+
+*** BREAK (15 mins) ***
+
+7. example-webapp-jaxb [jaxb-app] (45 mins)
+
+  -> Ejercicio similar pero con Persona (30 mins)
+
+---------------------------------------------------------------
+DÍA 2: (420 mins)
+
+Ejercicios:
+
+1. webapp-jax-ws-rs-jpa [soap-web-service-jpa] (90 mins)
+   (explicación de Hibernate y JPA breve)
+
+2. cliente-jax-ws-jpa [cliente-jax-ws-jpa] (30 mins)
+   (comandos wsimport y mvn generate-sources)
+
+*** BREAK (15 mins) ***
+
+3. Intro a RESTful y simple-webapp-api [simple-api-restful] (servlets) (60 mins)
+
+-> Ejercicios similar pero con Amistad (45 mins)
+	private String id;               // Identificador único de la relación de amistad
+    	private String usuarioId;        // ID del usuario principal (el que tiene el amigo)
+    	private String amigoId;          // ID del amigo (la otra persona)
+    	private Date fechaAmistad;       // Fecha en que se hizo la amistad
+    	private String estado;           // Estado de la amistad (pendiente, confirmado, bloqueado)
+
+*** COMIDA (60 mins) ***
+
+4. cliente-restful [cliente-api-restful] (30 mins)
+   e introducción a Jersey y jakarta.json-api (15 mins)
+
+-> Implementar una vista web elegante (45 mins)
+
+*** BREAK (15 mins) ***
+
+5. Actividad pendiente (75 mins)
+
+----------------------------------------------------------------
+DÍA 3: (420 mins)
+
+1. webapp-jpa-jax-rs (web-service-restful-jpa) (120 mins)
+   (Ajustar el proyecto para que sea de peliculas)
+
+*** BREAK (15 mins) ***
+
+1. webapp-jpa-jax-rs (web-service-restful-jpa) (30 mins)
+
+TIEMPO PENDIENTE...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
