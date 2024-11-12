@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida a la API de Películas</title>
+    <link rel="stylesheet" href="css/sytles.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Bienvenido a la API de Películas 🎬</h1>
+        <p>Tu fuente confiable para obtener información sobre las mejores películas de todos los tiempos.</p>
+    </header>
+
+    <section class="api-info">
+        <h2>¿Cómo usar la API?</h2>
+        <p>Esta API te permite acceder a una base de datos con información sobre películas, incluyendo títulos, géneros, duración y mucho más.</p>
+
+        <h3>Endpoints disponibles:</h3>
+        <ul>
+            <li><strong>/webapp-jpa-jax-rs/api/peliculas</strong> con GET para obtener la lista de todas las películas.</li>
+            <li><strong>/webapp-jpa-jax-rs/api/peliculas/{id}</strong> con GET para obtener detalles de una película específica.</li>
+            <li><strong>/webapp-jpa-jax-rs/api/peliculas</strong> con PUT más la pelicula en JSON para agregar una pelicula nueva.</li>
+            <li><strong>/webapp-jpa-jax-rs/api/peliculas/{id}</strong> con DELETE para eliminar una pelicula.</li>
+        </ul>
+
+        <h3>Formato de respuesta:</h3>
+        <pre>
+            {
+                "id_pelicula": 1,
+                "titulo": "El Padrino",
+                "anio_lanzamiento": 1972,
+                "genero": "Crimen, Drama",
+                "duracion": 175
+            }
+        </pre>
+    </section>
+
+</div>
+</body>
+</html>
